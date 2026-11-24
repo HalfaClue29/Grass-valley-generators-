@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /internal-notes.md
+Disallow: /CHANGELOG.md
 
 Sitemap: https://grassvalleygenerators.com/sitemap.xml
