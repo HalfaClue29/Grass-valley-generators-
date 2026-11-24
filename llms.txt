@@ -1,41 +1,26 @@
 # Grass Valley Generators
 
-> Whole-house standby generator installation, cost information, and service for Grass Valley, Nevada City, and western Nevada County, California.
+Site: https://grassvalleygenerators.com/
+This site is a lead service. It connects homeowners in western Nevada County, California, with a licensed contractor for whole-house standby generator installation, service, and a free in-home estimate. The site operator is not the installer. No contractor is named on the site yet.
 
-- Website: https://grassvalleygenerators.com/
+## Towns and pages
+- Grass Valley (homepage): https://grassvalleygenerators.com/
+- Nevada City: https://grassvalleygenerators.com/nevada-city/
+- Penn Valley: https://grassvalleygenerators.com/penn-valley/
+- Lake Wildwood: https://grassvalleygenerators.com/lake-wildwood/
+- Alta Sierra: https://grassvalleygenerators.com/alta-sierra/
+- Generator service and maintenance: https://grassvalleygenerators.com/generator-service/
 
-## Services
-- Whole-house standby generator installation
-- Standby generator service and annual maintenance
-- Free in-home generator estimates, plus a ballpark estimate on the website in about a minute
+## Key sourced facts
+- Average installed cost: $13,000 to $16,000, as published by the leading local Generac dealer (November 2026). Individual quotes vary by generator size, fuel run, electrical panel condition, and placement.
+- Install wait: 8 to 10 weeks from prepayment, as published by that same dealer (November 2026). This site does not promise a shorter wait.
+- Nevada County is in PG&E Public Safety Power Shutoff (PSPS) territory. About 2,137 customers were in the October 2026 shutoff scope, and outages peaked at 5,019 customers out on November 18, 2026. 30.4% of Nevada County is age 65 or older. These figures describe the county, not a single town outage.
+- Populations (2020 census): Grass Valley 14,016; Nevada City 3,152. No population figures are published here for Penn Valley, Lake Wildwood, or Alta Sierra.
+- Most installs in this county run on propane, because much of the county has no natural gas service.
+- Planning sizes (loads decide the final size, confirmed at an in-home estimate): essentials only about 10–14 kW; most of a typical home about 18–22 kW; whole house with AC and a well pump about 22–26 kW.
+- Yearly maintenance is required: oil, filters, plugs, a battery check, and a test run under load. Plan pricing is set by the servicing installer and is not listed on this site.
+- Brands commonly installed and serviced in this market: Generac, Kohler, and Cummins.
 
-## Service area
-Grass Valley, Nevada City, Penn Valley, Lake Wildwood, Alta Sierra, and the rest of western Nevada County, California.
-
-## Pricing
-The leading Generac dealer serving this area publishes an average installed cost of $13,000 to $16,000. Size, fuel run, electrical panel condition, placement, trenching, and permits affect the final quote. A far-lower quote usually leaves something out of scope. A ballpark range is available on the website; a real quote requires an in-home look at the panel, fuel, and placement.
-
-## Install wait
-8 to 10 weeks from prepayment at that same booked-out dealer, per its published timeline.
-
-## Sizing (planning guide)
-- Essentials only (fridge, lights, outlets, furnace fan, phone and internet): about 10-14 kW
-- Most of the house (essentials plus well pump, kitchen, laundry and one AC unit): about 18-22 kW
-- Whole house (including AC, electric range, dryer and well pump): about 22-26 kW
-
-Well pump startup surge, AC tonnage, and electric heat can push a home up a size. Confirm at the in-home estimate.
-
-## Fuel
-Mostly propane. Much of Nevada County has no natural gas service, so the generator ties into the home's propane tank, or a tank set is added to the quote.
-
-## Maintenance
-Once a year: oil, filters, plugs, battery check, and a test run under load.
-
-## Brands
-Generac is the most common locally. Kohler and Cummins standby generators are also installed and serviced in this market.
-
-## Why this area
-Nevada County is in PG&E public safety power shutoff (PSPS) territory. Many homes run on well pumps, propane, and long driveways. In the October 2026 shutoff scope, about 2,137 PG&E customers in Nevada County were in line to lose power; on one storm day, November 18, outages peaked at 5,019 customers out. 30.4% of the county is 65 or older.
-
-## Contact
-Request a free in-home estimate with the form at https://grassvalleygenerators.com/#book
+## How to request an estimate
+Use the form on the homepage: https://grassvalleygenerators.com/#book
+Submitted details are shared with the licensed installer who handles the request.
