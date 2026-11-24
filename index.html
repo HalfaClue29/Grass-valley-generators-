@@ -647,7 +647,7 @@
     <div class="wrap">
       <div class="sec-head">
         <h2 id="book-h">Book a free in-home estimate</h2>
-        <p>Leave your details and what you want to keep running. In this preview the form confirms on the page only and sends nothing. On the live site this same form delivers the lead the moment it is submitted.</p>
+        <p>Leave your details and what you want to keep running. Your request comes straight to us, and we will call you back to set up your free in-home estimate.</p>
       </div>
       <form class="form-card" id="leadForm" novalidate>
         <div class="form-grid">
@@ -666,7 +666,7 @@
         </div>
         <div class="cta-row">
           <button type="submit" class="btn gold">Request my estimate</button>
-          <span class="src" style="align-self:center">Preview only, nothing is sent or stored when you submit.</span>
+          <span class="src" style="align-self:center">Free estimate. No obligation, and we never share your details.</span>
         </div>
         <div class="form-ok" id="formOk" role="status"></div>
       </form>
@@ -818,7 +818,7 @@
     });
   });
 
-  // Lead form (preview: on-page confirmation only, nothing sent or stored)
+  // Lead form: sends the request to Web3Forms, which emails it to the site owner.
   var form=document.getElementById('leadForm');
   form.addEventListener('submit', function(e){
     e.preventDefault();
@@ -831,9 +831,45 @@
       return;
     }
     var town=document.getElementById('fTown').value;
+    var email=document.getElementById('fEmail').value.trim();
+    var notes=document.getElementById('fNotes').value.trim();
+    var quizEl=document.getElementById('qResult');
+    var quiz=quizEl?quizEl.textContent.trim():'';
+    var btn=form.querySelector('button[type="submit"]');
+    var btnText=btn.textContent;
+    btn.disabled=true;
+    btn.textContent='Sending...';
     ok.classList.add('show');
-    ok.innerHTML='<strong>Got it, '+name.split(' ')[0]+'.</strong> In this preview nothing was sent. On the live site, this '+town+' estimate request would be delivered the moment you submitted it, with your notes attached.';
-    form.reset();
+    ok.innerHTML='<strong>Sending your request...</strong>';
+    fetch('https://api.web3forms.com/submit', {
+      method:'POST',
+      headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify({
+        access_key:'dd53050b-d778-4271-8ec7-dc5549ad50ce',
+        subject:'New estimate request from grassvalleygenerators.com',
+        from_name:'Grass Valley Generators website',
+        name:name,
+        phone:phone,
+        email:email,
+        town:town,
+        notes:notes,
+        ballpark_quiz:quiz,
+        botcheck:''
+      })
+    }).then(function(r){return r.json();}).then(function(res){
+      btn.disabled=false;
+      btn.textContent=btnText;
+      if(res && res.success){
+        ok.innerHTML='<strong>Got it, '+name.split(' ')[0]+'.</strong> Your '+town+' estimate request is in. We will call you back shortly to set up your free in-home estimate.';
+        form.reset();
+      } else {
+        ok.innerHTML='<strong>Something went wrong sending that.</strong> Please try again in a moment.';
+      }
+    }).catch(function(){
+      btn.disabled=false;
+      btn.textContent=btnText;
+      ok.innerHTML='<strong>Something went wrong sending that.</strong> Please try again in a moment.';
+    });
   });
 })();
 </script>
